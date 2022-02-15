@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/admin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10sp"
+            android:background="@drawable/layouts"
+            android:orientation="vertical"
+            android:elevation="5sp"
+            android:alpha="0.9"
+            android:padding="10sp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="150sp"
+                android:layout_gravity="center"
+                android:layout_height="150sp"
+                android:src="@drawable/ool"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#BB0000"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60sp"
+                android:layout_marginTop="5sp"
+                android:text="Moi University Online Library"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:elevation="5sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview"
+                android:layout_marginTop="30sp"
+                android:paddingStart="10sp"
+                android:elevation="5sp"
+                android:hint="Full Name"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/emailAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview"
+                android:layout_marginTop="20sp"
+                android:paddingStart="10sp"
+                android:elevation="5sp"
+                android:hint="Email Address"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/admNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview"
+                android:layout_marginTop="20sp"
+                android:paddingStart="10sp"
+                android:elevation="5sp"
+                android:hint="Admission No."
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/user_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview"
+                android:layout_marginTop="20sp"
+                android:paddingStart="10sp"
+                android:hint="Password"
+                android:elevation="5sp"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/confirm_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview"
+                android:layout_marginTop="20sp"
+                android:paddingStart="10sp"
+                android:hint="Confirm Password"
+                android:elevation="5sp"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/button"
+                android:backgroundTint="#007FFF"
+                android:textSize="20sp"
+                android:elevation="5sp"
+                android:text="Create Account"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/textlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Already have an Account!"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:elevation="5sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="60sp"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/progressbar"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

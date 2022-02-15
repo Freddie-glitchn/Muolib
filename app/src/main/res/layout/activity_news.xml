@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/news_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#006600"/>
+
+    <ImageView
+        android:id="@+id/newsimageView"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@drawable/ic_baseline_add" />
+
+    <EditText
+        android:id="@+id/newPost_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newsimageView"
+        android:elevation="15sp"
+        android:ems="10"
+        android:hint="Add Description"
+        android:inputType="textMultiLine"
+        android:maxLength="150"
+        android:paddingStart="10sp" />
+
+    <Button
+        android:id="@+id/post_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Post"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progressbarnew"/>
+
+</LinearLayout>

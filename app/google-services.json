@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "806957213385",
+    "project_id": "muolibdemo2",
+    "storage_bucket": "muolibdemo2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806957213385:android:2a9e0593b8a10b442bcf18",
+        "android_client_info": {
+          "package_name": "com.example.muolibdemo2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806957213385-1hr0q1jhjun6ihir7emguni31k8t72cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD73lTIvAtMIUGpp_bSONbpbJEpe6Nku04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806957213385-1hr0q1jhjun6ihir7emguni31k8t72cc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

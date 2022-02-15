@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#006600"
+    android:gravity="bottom"
+    android:padding="16sp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/prof_pic"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#BB0000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_show_welcome"
+        android:hint="Load'n..."
+        android:paddingTop="8dp"
+        android:layout_marginTop="10sp"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Load'n..."
+        android:paddingTop="8dp"
+        android:layout_marginTop="10sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+</LinearLayout>
